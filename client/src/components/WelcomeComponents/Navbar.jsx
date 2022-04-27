@@ -43,7 +43,7 @@ const Navbar = () => {
             {toggleMenu && (
             <ul
                 className="z-10 fixed top-0 -right-2 p-2 w-[45vw] h-screen shadow-2xl md:hidden list-none 
-                    flex flex-col justify-start items-center rounded-md blue-glassmorphism text-white animate-slide-in leading-10"
+                    flex flex-col justify-start items-center rounded-md black-glassmorphism text-white animate-slide-in leading-10"
             >
                 <li className="text-xl w-full my-0">
                     <AiOutlineClose onClick={() => setToggleMenu(false)} />
