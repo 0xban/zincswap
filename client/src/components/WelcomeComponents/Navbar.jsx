@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose } from 'react-icons/ai';
 
-import logo from '../../images/zincswap.png';
+import logo from '../../../images/zincswap.png';
 
 const NavbarItem = ( {title, classProps}) => {
     return (
@@ -17,25 +17,21 @@ const Navbar = () => {
 
     }
 
-    return ( 
-    <nav className="w-full flex md:justify-start justify-between items-center p-4">
-        <div className="md:flex-[0.33] flex-initial justify-center items-center">
-            <img src={logo} alt="logo" className="w-96 cursor-pointer"></img>
+    return (
+
+    <nav className="w-full flex md:justify-center justify-between items-center p-8">
+        <div className="flex-center justify-center active:scale-95">
+                <img src={logo} alt="logo" className="w-32 cursor-pointer md:mr-96"></img>
         </div>
-        <ul className="font-semibold text-white md:flex hidden list-none flex-row justify-end items-center flex-initial px-4">
-            {["Swap", "Stake", "Farm", "xnDOGE"].map((item, index)=> (
-                <NavbarItem key={item+index} title={item} />
-            ))}
-
-
-            <li className="font-semibold bg-blue-600 py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-blue-700"
-                onClick= {connectWallet}
-            >
-                Connect Wallet
-            </li>
-
-            
-        </ul>
+            <ul className="font-semibold text-white md:flex hidden list-none flex-row justify-between items-center flex-initial px-4">
+                {["Swap", "Stake", "Farm", "Zinc"].map((item, index)=> (
+                    <NavbarItem key={item+index} title={item} />
+                    ))}
+                <li className="font-semibold bg-blue-600 py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-blue-700"
+                    onClick= {connectWallet}>
+                    Connect Wallet
+                </li>
+            </ul>
 
         <div className="flex relative">
 

@@ -16,14 +16,11 @@ const Form = () => {
 
     return(
 
-    <form onSubmit = {handleSubmit}>
-        
+    <form onSubmit = {handleSubmit}>        
             <div class="flex 
                         justify-center
                         py-12">
-                
-                    <div class="mb-3 xl:w-96">
-                                    
+                    <div class="mb-3 xl:w-96">        
                             <input 
                                     type="text"
                                     class="form-control
@@ -47,12 +44,8 @@ const Form = () => {
                                            placeholder="Your Wallet Address"
                                            onChange = {(e) => setAddress(e.target.value)}
                                            value = {address}>
-
                             </input>      
-                                                    
-                                        
                         </div>
-
                                 <button 
                                         button type = 'submit'
                                         class="bg-blue-600 
@@ -63,11 +56,8 @@ const Form = () => {
                                                mb-3
                                                rounded-r-lg 
                                                border border-solid border-black">
-
                                 Submit
-
-                                </button>
-                                
+                                </button>                                
             </div>
     </form>
 )}

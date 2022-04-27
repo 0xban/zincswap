@@ -1,4 +1,4 @@
-import { Navbar, Welcome, Form } from '../components';
+import { Navbar, Welcome, Footer } from '../components/WelcomeComponents';
 
 
 const WelcomePage = () => {
@@ -7,7 +7,7 @@ const WelcomePage = () => {
           <div className="gradient-bg-welcome">
             <Navbar />
             <Welcome />
-            <Form />
+            <Footer />
           </div>
     </div>
   )
