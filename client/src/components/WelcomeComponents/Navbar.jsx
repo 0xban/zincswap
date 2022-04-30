@@ -13,7 +13,7 @@ const Navbar = () => {
 
     <nav className="w-full flex md:justify-center justify-between items-center p-6 gradient-bg">
         <div className="active:scale-95">
-                <li>
+                <li className='flex items-center'>
                     <Link to="/">
                         <img src={logo} alt="logo" className="w-24 cursor-pointer"></img>
                     </Link>
