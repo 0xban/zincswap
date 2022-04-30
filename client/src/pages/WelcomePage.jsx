@@ -5,7 +5,6 @@ const WelcomePage = () => {
   return (
     <div className="WelcomePage">
           <div className="gradient-bg">
-              <Navbar />
               <Welcome />
               <Footer />
           </div>
